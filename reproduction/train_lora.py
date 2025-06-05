@@ -5,7 +5,7 @@ from peft import LoraConfig, get_peft_model, TaskType
 from utils import preprocess_function, compute_metrics
 
 
-def run_lora(model_name, task_name):
+def run_lora(model_name, task_name, target_modules):
     sentence_keys = {
         "cola": ("sentence", None),
         "sst2": ("sentence", None),
@@ -32,7 +32,7 @@ def run_lora(model_name, task_name):
         lora_alpha=16,
         lora_dropout=0.1,
         bias="none",
-        target_modules=["query", "value"]
+        target_modules=target_modules
     )
     model = get_peft_model(model, config)
 
