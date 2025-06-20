@@ -2,10 +2,6 @@
 
 This folder contains the implementation of LoRA in RoBERTa and DeBERTa V2 using the Python package `lora`. LoRA is described in the following pre-print:
 
-**LoRA: Low-Rank Adaptation of Large Language Models** <br>
-*Edward J. Hu\*, Yelong Shen\*, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen* <br>
-Paper: https://arxiv.org/abs/2106.09685 <br>
-
 ## Adapting to the GLUE Benchmark
 Our experiments on the GLUE benchmark are run on 4 NVIDIA Tesla V100 GPU cards out of a DGX-1. The results may vary due to different GPU models, drivers, CUDA SDK versions, floating-point precisions, and random seeds. 
 We report below the dev set results, taking the medium over 5 runs:
@@ -14,11 +10,6 @@ We report below the dev set results, taking the medium over 5 runs:
 <img src="figures/LoRA_NLU.PNG" width="800" >
 </p>
 
-Here are the GLUE benchmark test set results for DeBERTa XXL 1.5B (no ensemble):
-
-<p>
-<img src="figures/deberta_lora_glue.jpg" width="800" >
-</p>
 
 ## Download LoRA checkpoints
 
