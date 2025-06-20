@@ -29,6 +29,7 @@ We report below the dev set results, taking the medium over 5 runs:
 ```console
 conda env create -f environment.yml
 ```
+If this fails due to SSL, run `conda config --set ssl_verify false`.
 ### Install the pre-requisites
 lora:
 ```console
