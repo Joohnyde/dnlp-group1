@@ -1,3 +1,5 @@
+# This is essentially a copy of the reproduction-2 folder, but LoRA is applied to the MLP instead of the Attention heads
+
 # LoRA: Low-Rank Adaptation of Large Language Models
 
 This repo is a modified version of https://github.com/microsoft/lora to avoid unnecessary duplication.
